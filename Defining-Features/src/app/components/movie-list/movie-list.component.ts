@@ -8,11 +8,16 @@ import { Movie } from '../../movie';
 })
 export class MovieListComponent implements OnInit {
 
-  movie: Movie = {
+  movies: Movie[] = [{
     id: 1,
     title: "Star Wars",
-    attr:[]
-  }
+    attr:[1]
+  },
+  {
+    id: 2,
+    title: "Harry Potter",
+    attr:[2,1]
+  }]
   constructor() { }
 
   ngOnInit(): void {

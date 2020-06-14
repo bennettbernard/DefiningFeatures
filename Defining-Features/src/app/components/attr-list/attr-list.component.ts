@@ -8,10 +8,14 @@ import { Attr } from '../../attr';
 })
 export class AttrListComponent implements OnInit {
 
-  attribute: Attr = {
+  attribute: Attr[] = [{
     id: 1,
     name: "Attribute1"
-  }
+  },
+  {
+    id: 2,
+    name: "Attribute2"
+  }]
   constructor() { }
 
   ngOnInit(): void {

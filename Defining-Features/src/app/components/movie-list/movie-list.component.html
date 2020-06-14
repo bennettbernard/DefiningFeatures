@@ -1,1 +1,6 @@
-<p>{{movie.title | uppercase}}</p>
+<ul>
+    <li *ngFor="let movie of movies">
+        {{movie.title | uppercase}}
+        <p *ngFor="let at of movie.attr">Attributes: {{at}}</p>
+    </li>
+</ul>

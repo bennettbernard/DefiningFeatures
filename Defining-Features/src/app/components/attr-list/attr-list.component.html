@@ -1,1 +1,5 @@
-<button>{{attribute.name}}</button>
+<ul>
+    <li *ngFor="let attr of attribute">
+        <button>{{attr.name}}</button>
+    </li>
+</ul>
